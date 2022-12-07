@@ -21,7 +21,7 @@ from nltk.probability import FreqDist
 from nltk.corpus import stopwords
 
 dataSB = pd.read_excel(
-    '/Users/thaar/Documents/work/Project Ariq/LDA/testing 3/lda_test/content/dataDummy.xlsx', engine='openpyxl')  # lokasi file
+    'content\dataDummy.xlsx', engine='openpyxl')  # lokasi file
 dataSB.head()
 dataSB['textdata'] = dataSB['textdata'].str.lower()
 
@@ -152,7 +152,7 @@ dataSB['textdata_tokens_WSW'] = dataSB['textdata_tokens'].apply(
 # print(dataSB['textdata_tokens_WSW'].head())
 
 normalizad_word = pd.read_excel(
-    '/Users/thaar/Documents/work/Project Ariq/LDA/testing 3/lda_test/content/dataBerita.xlsx', engine='openpyxl')  # lokasi file
+    'content\dataDummy.xlsx', engine='openpyxl')  # lokasi file
 
 normalizad_word_dict = {}
 

@@ -10,9 +10,8 @@ from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 
 # C:\Users\thaar\Documents\work\Project Ariq\LDA\testing 3\lda_test\content\dataBerita.xlsx
-
-dataSB = pd.read_excel(
-    '/Users/thaar/Documents/work/Project Ariq/LDA/testing 3/lda_test/content/dataBerita.xlsx', engine='openpyxl')  # lokasi file
+dataSB = pd.read_excel('content\dataDummy.xlsx',
+                       engine='openpyxl')  # lokasi file
 dataSB.head()
 dataSB['textdata'] = dataSB['textdata'].str.lower()
 
